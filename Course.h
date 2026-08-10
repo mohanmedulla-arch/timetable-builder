@@ -11,8 +11,13 @@ public:
     std::string day;
     std::string time;
 
-    Course(std::string n, std::string l, std::string r,
-           std::string d, std::string t)
+    Course() = default;
+
+    Course(const std::string& n,
+           const std::string& l,
+           const std::string& r,
+           const std::string& d,
+           const std::string& t)
         : name(n), lecturer(l), room(r), day(d), time(t) {}
 };
 
